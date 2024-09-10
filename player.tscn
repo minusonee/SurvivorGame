@@ -4,11 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_o5ae3"]
 [ext_resource type="PackedScene" uid="uid://cemgbe80y46kd" path="res://gun.tscn" id="3_6g2xj"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_njrik"]
-radius = 18.0278
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yc2aw"]
+size = Vector2(37, 24)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_53slu"]
-radius = 47.0106
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_741uw"]
+radius = 34.8156
+height = 81.4887
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3oibj"]
 bg_color = Color(0.259294, 0.259294, 0.259294, 0.505882)
@@ -31,8 +32,9 @@ script = ExtResource("1_kp1ik")
 unique_name_in_owner = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -8)
-shape = SubResource("CircleShape2D_njrik")
+y_sort_enabled = true
+position = Vector2(0.5, -10)
+shape = SubResource("RectangleShape2D_yc2aw")
 one_way_collision_margin = 0.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -46,9 +48,10 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
-position = Vector2(-2, -51)
-rotation = -0.909196
-shape = SubResource("CircleShape2D_53slu")
+position = Vector2(-2, -59)
+rotation = -1.55885
+scale = Vector2(1, 1)
+shape = SubResource("CapsuleShape2D_741uw")
 debug_color = Color(0.922377, 5.10186e-05, 0.687741, 0.42)
 
 [node name="ProgressBar" type="ProgressBar" parent="."]

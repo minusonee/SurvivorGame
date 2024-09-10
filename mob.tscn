@@ -3,8 +3,9 @@
 [ext_resource type="Script" path="res://mob.gd" id="1_4qj6u"]
 [ext_resource type="PackedScene" uid="uid://ogik4s70pgwl" path="res://characters/slime/slime.tscn" id="1_tsxp1"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_solqv"]
-radius = 55.0364
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q46rf"]
+radius = 46.0
+height = 111.978
 
 [node name="Mob" type="CharacterBody2D"]
 collision_layer = 2
@@ -15,5 +16,6 @@ unique_name_in_owner = true
 position = Vector2(0, 25)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -1)
-shape = SubResource("CircleShape2D_solqv")
+position = Vector2(1, -9)
+rotation = -1.56555
+shape = SubResource("CapsuleShape2D_q46rf")
