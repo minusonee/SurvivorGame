@@ -1,5 +1,7 @@
-res://survivors_game.tscn
 res://player.tscn
+res://survivors_game.tscn
 res://gun.tscn
 res://characters/happy_boo/happy_boo.tscn
 res://mob.tscn
+res://player.gd
+res://mob.gd

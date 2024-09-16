@@ -4,8 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_o5ae3"]
 [ext_resource type="PackedScene" uid="uid://cemgbe80y46kd" path="res://gun.tscn" id="3_6g2xj"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yc2aw"]
-size = Vector2(37, 24)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_77ojn"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_741uw"]
 radius = 34.8156
@@ -26,6 +25,7 @@ corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
 [node name="Player" type="CharacterBody2D"]
+slide_on_ceiling = false
 script = ExtResource("1_kp1ik")
 
 [node name="HappyBoo" parent="." instance=ExtResource("1_o5ae3")]
@@ -34,7 +34,7 @@ unique_name_in_owner = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 y_sort_enabled = true
 position = Vector2(0.5, -10)
-shape = SubResource("RectangleShape2D_yc2aw")
+shape = SubResource("RectangleShape2D_77ojn")
 one_way_collision_margin = 0.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -50,7 +50,6 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
 position = Vector2(-2, -59)
 rotation = -1.55885
-scale = Vector2(1, 1)
 shape = SubResource("CapsuleShape2D_741uw")
 debug_color = Color(0.922377, 5.10186e-05, 0.687741, 0.42)
 
