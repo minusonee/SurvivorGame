@@ -1,7 +1,9 @@
+Button
+CanvasLayer
+TouchScreenButton
+Timer
 Label
 ColorRect
-CanvasLayer
-Timer
 PathFollow2D
 Path2D
 ProgressBar

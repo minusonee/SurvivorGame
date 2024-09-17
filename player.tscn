@@ -4,7 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_o5ae3"]
 [ext_resource type="PackedScene" uid="uid://cemgbe80y46kd" path="res://gun.tscn" id="3_6g2xj"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_77ojn"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_rntcu"]
+radius = 13.537
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_741uw"]
 radius = 34.8156
@@ -34,13 +35,13 @@ unique_name_in_owner = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 y_sort_enabled = true
 position = Vector2(0.5, -10)
-shape = SubResource("RectangleShape2D_77ojn")
+shape = SubResource("CircleShape2D_rntcu")
 one_way_collision_margin = 0.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Gun" parent="." instance=ExtResource("3_6g2xj")]
-position = Vector2(-2, -33)
+position = Vector2(0, -33)
 
 [node name="HurtBox" type="Area2D" parent="."]
 unique_name_in_owner = true

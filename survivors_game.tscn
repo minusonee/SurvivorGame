@@ -14,10 +14,23 @@ point_count = 5
 y_sort_enabled = true
 script = ExtResource("1_p6fy1")
 
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="Button" type="Button" parent="CanvasLayer2"]
+offset_left = 1748.0
+offset_top = 874.0
+offset_right = 1894.0
+offset_bottom = 1022.0
+text = "add new gun/
+increase fire rate"
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_right = 0.00572917
 offset_right = 1915.0
 offset_bottom = 1078.0
 color = Color(0, 0.457169, 0.079289, 1)
@@ -52,6 +65,10 @@ position = Vector2(1530, 753)
 wait_time = 0.3
 autostart = true
 
+[node name="TreeTimer" type="Timer" parent="."]
+wait_time = 0.81
+autostart = true
+
 [node name="GameOver" type="CanvasLayer" parent="."]
 unique_name_in_owner = true
 visible = false
@@ -80,5 +97,7 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 226
 text = "GAME OVER"
 
+[connection signal="pressed" from="CanvasLayer2/Button" to="." method="_on_button_pressed"]
 [connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="TreeTimer" to="." method="_on_tree_timer_timeout"]
