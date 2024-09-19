@@ -32,6 +32,7 @@ The assets used in this project are provided by GDQuest and can be found [here](
 ### Controls
 - **Move**: WASD
 - **Shoot**: automatic
+- **Add gun**: button
 
 ## Credits
 - **Game Development**: Made with [Godot Engine](https://godotengine.org/)
