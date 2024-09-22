@@ -3,6 +3,7 @@ res://player.tscn
 res://gun.tscn
 res://characters/happy_boo/happy_boo.tscn
 res://mob.tscn
-res://player.gd
+res://bullet.tscn
+res://pine_tree.tscn
 res://survivors_game.gd
-res://gun.gd
+res://player.gd

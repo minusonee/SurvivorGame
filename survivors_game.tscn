@@ -22,8 +22,7 @@ offset_left = 1748.0
 offset_top = 874.0
 offset_right = 1894.0
 offset_bottom = 1022.0
-text = "add new gun/
-increase fire rate"
+text = "Add Gun"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1
