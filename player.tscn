@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://c2wsmmjynx08p"]
+[gd_scene load_steps=6 format=3 uid="uid://c2wsmmjynx08p"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_kp1ik"]
 [ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_o5ae3"]
-[ext_resource type="PackedScene" uid="uid://dtkngk0ftv5ak" path="res://progress_bar.tscn" id="2_yvm6b"]
 [ext_resource type="PackedScene" uid="uid://cemgbe80y46kd" path="res://gun.tscn" id="3_6g2xj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rntcu"]
@@ -40,6 +39,3 @@ position = Vector2(-2, -59)
 rotation = -1.55885
 shape = SubResource("CapsuleShape2D_741uw")
 debug_color = Color(0.922377, 5.10186e-05, 0.687741, 0.42)
-
-[node name="ProgressBar" parent="." instance=ExtResource("2_yvm6b")]
-unique_name_in_owner = true

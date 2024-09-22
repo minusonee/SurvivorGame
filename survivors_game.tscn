@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://crfgpgvybr827"]
+[gd_scene load_steps=6 format=3 uid="uid://crfgpgvybr827"]
 
 [ext_resource type="PackedScene" uid="uid://c2wsmmjynx08p" path="res://player.tscn" id="1_owmx7"]
 [ext_resource type="Script" path="res://survivors_game.gd" id="1_p6fy1"]
+[ext_resource type="PackedScene" uid="uid://dtkngk0ftv5ak" path="res://progress_bar.tscn" id="2_q5vui"]
 [ext_resource type="PackedScene" uid="uid://cbc3tfi3qukuh" path="res://pine_tree.tscn" id="2_ycora"]
 
 [sub_resource type="Curve2D" id="Curve2D_v3u18"]
@@ -23,6 +24,13 @@ offset_top = 874.0
 offset_right = 1894.0
 offset_bottom = 1022.0
 text = "Add Gun"
+
+[node name="ProgressBar" parent="CanvasLayer2" instance=ExtResource("2_q5vui")]
+unique_name_in_owner = true
+offset_left = 34.0
+offset_top = 1023.0
+offset_right = 422.0
+offset_bottom = 1055.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1
